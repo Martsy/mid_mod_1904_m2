@@ -1,0 +1,6 @@
+<h1><%= @author.name %></h1>
+<% @author.books.each do |book| %>
+  <section id='author-<%= @author.id%>'>
+    <h2><%= book.title %></h2>
+<% end %>
+<p>Average Pages: <%= @author.average_pages %></p>
